@@ -85,7 +85,7 @@ metafor::forest(
   cex = 0.75,
   header = TRUE,
   mlab = "Overall Effect Size",
-  xlab = "Log Response Ratio (± 95% CI)"
+  xlab = "Log Odds Ratio (± 95% CI)"
 )
 
 # Create table for forest plot
@@ -250,4 +250,5 @@ final_summary_table %>%
   tab_header(
     title = "Summary of Effect Sizes by Moderator Level"
   ) %>%
+
   gtsave("summary_table.png")
